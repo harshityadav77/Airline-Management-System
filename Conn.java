@@ -8,7 +8,7 @@ public class Conn {
     public Statement getStatement() throws SQLException {
     if (c == null || c.isClosed() || !c.isValid(2)) {
         try {
-            c = DriverManager.getConnection("jdbc:mysql:///airlinemanagementsystem","user","password");
+            c = DriverManager.getConnection("jdbc:mysql:///airlinemanagementsystem","enteruser","password");
         } catch (SQLException e) {
             e.printStackTrace();
             throw e;
